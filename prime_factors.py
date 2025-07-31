@@ -5,11 +5,7 @@ class PrimeFactor():
         factors = []
         if number > 1:
             divisor = 2
-            if number == 4:
-                while number % divisor ==0:
-                    factors.append(divisor)
-                    number //= divisor
-            elif number in [6,9]:
+            if number in [4,6,9]:
                 divisor = 2
                 while number > 1:
                     while number % divisor == 0:
